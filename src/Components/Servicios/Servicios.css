@@ -1,0 +1,189 @@
+.servicio {
+    padding-left: 1rem/* 16px */;
+    padding-right: 1rem/* 16px */;
+    margin-top: 4rem/* 64px */;
+    margin-bottom: 4rem/* 64px */;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1536px;
+}
+
+@media (min-width: 1280px) {
+    .servicio {
+        padding-left: 4rem/* 6rem */;
+        padding-right: 4rem/* 6rem */;
+    }
+}
+
+.container-servicio {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container-servicio {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container-servicio {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-servicio {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container-servicio {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container-servicio {
+        max-width: 1536px;
+    }
+}
+
+/*-----------------------------------*/
+.contenedor-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem/* 48px */;
+}
+    
+@media (min-width: 768px) {
+    .contenedor-servicio {
+        flex-direction: row;
+    }
+}
+
+/*-----------------------------------*/
+@media (min-width: 768px) {
+    .left-servicio {
+        width: 50%;
+    }
+}
+
+/*-----------------------------------*/
+.text-left-servicio {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .text-left-servicio {
+        width: 80%;
+    }
+}
+
+/*-----------------------------------*/
+.description-servicio {
+    margin-top: 1.25rem/* 20px */;
+    margin-bottom: 1.25rem/* 20px */;
+    --tw-text-opacity: 1;
+    color: rgb(85 85 85 / var(--tw-text-opacity));
+    line-height: 30px;
+}
+
+/*-----------------------------------*/
+.boton-servicio {
+    --tw-bg-opacity: 1;
+    background-color: rgb(57 219 74 / var(--tw-bg-opacity));
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    padding-left: 2rem/* 32px */;
+    padding-right: 2rem/* 32px */;
+    padding-top: 0.75rem/* 12px */;
+    padding-bottom: 0.75rem/* 12px */;
+    border-radius: 9999px;
+}
+
+/*-----------------------------------*/
+@media (min-width: 768px) {
+    .right-servicio {
+        width: 50%;
+    }
+}
+
+/*-----------------------------------*/
+.right-contenedor-sevicio  {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem/* 32px */;
+    align-items: center;
+}
+    
+@media (min-width: 640px) {
+    .right-contenedor-sevicio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/*----------------------------------------*/
+.service-id {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+border-radius: 0.125rem/* 2px */;
+padding-top: 1.25rem/* 20px */;
+    padding-bottom: 1.25rem/* 20px */;
+padding-left: 1rem/* 16px */;
+    padding-right: 1rem/* 16px */;
+text-align: center;
+ --tw-text-opacity: 1;
+    color: rgb(57 219 74 / var(--tw-text-opacity));
+cursor: pointer;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem/* 8px */ * var(--tw-space-y-reverse));
+}
+
+
+.hover\:border:hover {
+    border-width: 1px;
+}
+
+.hover\:border-indigo-600:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+/*-----------------------------------------*/
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------------------------------*/
+.pt-3 {
+    padding-top: 0.75rem/* 12px */;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/*-----------------------------------------*/
+.text-\[\#90BD95\] {
+    --tw-text-opacity: 1;
+    color: rgb(144 189 149 / var(--tw-text-opacity));
+}
+
+

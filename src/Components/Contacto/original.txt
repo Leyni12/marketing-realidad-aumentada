@@ -1,0 +1,89 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import App from '../../assets/img/DownloadAPP/telefono-app.png';
+import './Contacto.css';
+
+const Contacto = () => {
+  const [image, setImage] = useState(null);
+  const [video, setVideo] = useState(null);
+
+  const handleImageChange = (e) => {
+    setImage(e.target.files[0]);
+  };
+
+  const handleVideoChange = (e) => {
+    setVideo(e.target.files[0]);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!image || !video) {
+      alert('Por favor, sube una imagen y un video.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('image', image);
+    formData.append('video', video);
+
+    try {
+      const response = await axios.post('http://localhost:5000/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      if (response.status === 200) {
+        alert('Imagen y video subidos con éxito');
+        console.log('Datos de respuesta:', response.data);
+        // Aquí puedes manejar la respuesta, por ejemplo, guardar el targetId y la ubicación del video para su uso posterior
+      } else {
+        alert('Fallo al subir la imagen y el video');
+      }
+    } catch (error) {
+      console.error('Error al subir los archivos:', error);
+      alert('Ocurrió un error al subir los archivos.');
+    }
+  };
+
+  return (
+    <div className="fondo-contact">
+      <div className="Contacto container-Contacto ">
+        <div className="contenedor-contacto">
+          <div className="right-contact">
+            <div className="text-left-container-contact">
+              <p className="subtitle">Personaliza tus etiquetas</p>
+              <h2 className="titleCont md:leading-snug-cont">
+                Completa el formulario 
+              </h2>
+              <blockquote className="blockquote-text">  
+                <li><span role="img" aria-label="Checkmark">&#10004;</span> En caso de que quiera algo más personalizado, describa qué contenido le gustaría que se mostrara cuando los clientes escaneen sus etiquetas. Puede incluir descripciones de productos, videos, avatares en movimiento hablando y más.</li>
+              </blockquote>
+            </div>
+          </div>
+
+          <div className="right-contact">
+            <div className="text-left-container-contact">
+              <blockquote className="blockquote-text">
+                <form onSubmit={handleSubmit}>
+                  <div className="input-group">
+                    <label>Adjunta la imagen de producto</label>
+                    <input type="file" accept="image/*" onChange={handleImageChange} required />
+                  </div>
+                  <div className="input-group">
+                    <label>Adjunta el video </label>
+                    <input type="file" accept="video/*" onChange={handleVideoChange} required />
+                  </div>
+                  <button className='boton-contacto' type="submit">Enviar</button>
+                </form>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contacto;

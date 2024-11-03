@@ -1,0 +1,146 @@
+.proyecto {
+    padding-left: 1rem;/*1rem*/
+    padding-right: 1rem; /*1rem*/
+    max-width: 1536px;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative;
+}
+@media (max-width: 1536px) {
+    .container-proyecto {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+@media (max-width: 1280px) {
+    .container-proyecto {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/**/
+@media (min-width: 640px) {
+    .container-proyecto {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container-proyecto {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container-proyecto {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container-proyecto {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container-proyecto {
+        max-width: 1536px;
+    }
+}
+
+.container-proyecto {
+    width: 100%;
+}
+
+/*--------------------------------------------------*/
+.text-left-proyecto {
+    text-align: left;
+}
+
+/*--------------------------------------------------*/
+.proyect-left-direcciones {
+    margin-bottom: 2.5rem;
+    top: 2rem;
+    right: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .proyect-left-direcciones {
+        margin-right: 6rem;
+    	position: absolute;
+    }
+}
+
+/*---------------------------------------------------*/
+.boton {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    margin-left: 1.25rem;
+}
+
+/*---------------------------------------------------*/
+.FaAngleLeft {
+    padding: 0.25rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+.FaAngleRight{
+    padding: 0.25rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+/*---------------------------------------------------*/
+.boton-greed {
+    background-color: var(--green);
+}
+
+/*----------------------------------------------------------*/
+.slider-proyect {
+    overflow: hidden;
+    margin-top: 2.5rem;
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*--hay que ver si va */
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem/* 20px */ * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem/* 20px */ * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/*-----------------------------*/
+.title-pro{
+    color: var(--black);
+	font-size: 2.25rem/* 36px */;
+	line-height: 2.5rem/* 40px */;
+	font-weight: 700;
+	margin-top: 0.5rem/* 8px */;
+	margin-bottom: 0.5rem/* 8px */;
+    
+
+}
+
+@media (min-width: 768px) {
+    .title-pro {
+        font-size: 3rem;
+        line-height: 1.375;
+    }
+}
+@media (min-width: 768px) {
+    .md\:leading-snug-p {
+       width: 800px; /*520px modifique*/
+    }
+}

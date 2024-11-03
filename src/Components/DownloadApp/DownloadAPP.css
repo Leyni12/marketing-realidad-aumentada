@@ -1,0 +1,144 @@
+.fondo {
+    padding: 20px 0;
+    background: linear-gradient(180deg, rgba(10, 233, 138, .48), rgba(10, 233, 138, 0) 42.31%), 
+                radial-gradient(326.4% 182.46% at 100% 0, rgba(10, 233, 138, .368) 0, rgba(0, 170, 99, .4) 25.86%, rgba(0, 196, 114, .4) 26.01%, rgba(6, 207, 195, .204) 87.98%, rgba(11, 216, 130, 0) 100%);
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.DownloadAPP {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1536px;
+    margin: 4rem auto;
+}
+
+@media (min-width: 1280px) {
+    .DownloadAPP {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+.container-DownloadAPP {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .container-DownloadAPP {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-DownloadAPP {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-DownloadAPP {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container-DownloadAPP {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container-DownloadAPP {
+        max-width: 1536px;
+    }
+}
+
+.contenedor-App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-App {
+        flex-direction: row;
+    }
+}
+
+.left-App,
+.right-App {
+    flex: 1;
+}
+
+.text-left-container {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .text-left-container {
+        width: 95%;
+    }
+}
+
+.blockquote-text {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: rgb(85 85 85);
+    line-height: 30px;
+}
+
+.Avatar-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    width: 15rem;
+}
+
+.titleApp {
+    color: var(--black);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .titleApp {
+        font-size: 3rem;
+        line-height: 1.375;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:leading-snug-app {
+        width: 520px;
+    }
+}
+
+.boton-descarga {
+    width: 110%;
+    font-size: 100%;
+    color: rgb(255 255 255);
+    font-weight: 600;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: var(--green);
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.boton-descarga:hover {
+    background-color: #CCC;
+    color: #ffffff;
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36ee74",
+        "name": "LEGADO",
+        "description": "Legado..........",
+        "image": "/images/proyectosAR/legado.jpg",
+        "category": "popular"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee712",
+        "name": "MIKELEY",
+        "description": "MIKELEY......",
+        "image": "/images/proyectosAR/mikeley.png",
+        "category": "popular"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7x",
+        "name": "BRIMA",
+        "description": "BRIMA........",
+        "image": "/images/proyectosAR/Brima.jpg",
+        "category": "popular"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7f",
+        "name": "PICOP",
+        "description": "PICOP...........",
+        "image": "/images/proyectosAR/Picop.jpg",
+        "category": "popular"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7e",
+        "name": "Fish Parmentier",
+        "description": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "/images/recipes/img1.png",
+        "category": "popularl"
+    }
+]
